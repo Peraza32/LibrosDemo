@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "329ba9e2-82df-4f4a-97de-e592c6b71103",
+		"name": "Books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18472509",
+		"_collection_link": "https://perazacorp.postman.co/workspace/7ff8c79c-99fc-471e-b79b-4e87d9c85a45/collection/18472509-329ba9e2-82df-4f4a-97de-e592c6b71103?action=share&source=collection_link&creator=18472509"
+	},
+	"item": [
+		{
+			"name": "GetBooksByGenre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/book/genre?genre=horror",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"genre"
+					],
+					"query": [
+						{
+							"key": "genre",
+							"value": "horror"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBookById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/book/410d8b64-a255-4864-a60e-a2d2ad351369",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"410d8b64-a255-4864-a60e-a2d2ad351369"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBook",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\":45\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/book/410d8b64-a255-4864-a60e-a2d2ad351369",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"410d8b64-a255-4864-a60e-a2d2ad351369"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
