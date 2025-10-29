@@ -1,10 +1,10 @@
 package org.peraza.librosdemo.models.dtos;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class LoginDTO {
-    private String username;
-    private String state;
+public class GenreDTO {
+    private String genre;
 }
