@@ -29,6 +29,6 @@ public class User {
     @Column(name = "user_state", nullable = false)
     private String state;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Book> books;
 }
