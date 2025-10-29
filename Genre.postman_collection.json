@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "915ac00a-c468-4821-9586-68e26e4f755a",
+		"name": "Genre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18472509",
+		"_collection_link": "https://perazacorp.postman.co/workspace/7ff8c79c-99fc-471e-b79b-4e87d9c85a45/collection/18472509-915ac00a-c468-4821-9586-68e26e4f755a?action=share&source=collection_link&creator=18472509"
+	},
+	"item": [
+		{
+			"name": "AllGenre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/genre/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"genre",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

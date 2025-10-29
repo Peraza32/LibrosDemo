@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "78899cae-79af-43ba-b408-9b6607490548",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18472509",
+		"_collection_link": "https://perazacorp.postman.co/workspace/7ff8c79c-99fc-471e-b79b-4e87d9c85a45/collection/18472509-78899cae-79af-43ba-b408-9b6607490548?action=share&source=collection_link&creator=18472509"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/auth/login?username=alice&password=password1235",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "alice"
+						},
+						{
+							"key": "password",
+							"value": "password1235"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
